@@ -1,0 +1,28 @@
+{
+  "name": "emexo-daily-works",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dsp9391/project1.git"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "Reddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/dsp9391/project1/issues"
+  },
+  "homepage": "https://gitlab.com/dsp9391/project1#readme",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "node": "^20.15.0"
+  }
+}

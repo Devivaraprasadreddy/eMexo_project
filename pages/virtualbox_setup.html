@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="../style.css">
+
+      <title>Responsive dropdown menu - Bedimcode</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="/" class="nav__logo">
+                  <i class="ri-planet-line"></i> DSP
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="/" class="nav__link">Home</a></li>
+
+                  <li><a href="/virtualbox" class="nav__link">Virtual Box</a></li>
+
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Installations <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="/docker" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Docker
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="/putty" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> Putty
+                           </a>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Setup <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="/aws" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> AWS
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="/linux" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> linux
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="/basics" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> basics
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="/about" class="nav__link">About</a></li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="/login" class="dropdown__link">
+                              <i class="ri-user-line"></i> Login
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="/signup" class="dropdown__link">
+                              <i class="ri-lock-line"></i> Register
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="/login" class="dropdown__link">
+                              <i class="ri-message-3-line"></i> Logut
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="/contact" class="nav__link">Contact</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <div class="containers">
+      <center><h1>Virtualbox Setup</h1></center>
+      <br><br>
+      <h3>Steps</h3>
+      <ul>
+          <li>*  Open Virtualbox</li><br>
+          <li>*  Click new one</li><br>
+          <li>*  Name : Give any Name</li><br>
+          <li>*  ISO Image : Select ISO Ubuntu Server File</li><br>
+          <li>*  Tick skip unattended installation and click next button</li><br>
+          <li>*  Hardware Part [Based on our requirement change the processor] then click next button</li><br>
+          <li>*  Virtual Hard Disk Part [Minimum harddisk 20GB]</li><br>
+          <li>*  And Click Finish</li><br>
+      </ul>
+  
+      <h1 style="padding-left: 20px;">Next Process</h1>
+      <ul>
+          <li>* Select Our machine then click start button</li><br>
+          <li>* It will be redirect to ubuntu server</li><br>
+          <li>* It will be automatically running the process</li><br>
+          <li>* It took sometime</li><br>
+          <li>* After Completing the process here asking</li><br>
+          <li>* Select the language : English [ using arrow keys and enter button ]</li><br>
+          <li>* Continue without updating</li><br>
+          <li>* Done</li><br>
+          <li>* Select Ubuntu Server</li><br>
+          <li>* Done</li><br>
+          <li>* Proxy Address ---> No Need</li><br>
+          <li>* Configure ubuntu archive mirror [ its load sometime ]</li><br>
+          <li>* Select use an entire Disk</li><br>
+          <li>* Confirm destructive Action -----> Continue</li><br>
+      </ul>
+      <h1 style="padding-left: 20px;">Profile Setup</h1>
+      <h5 style="padding-left: 45px;">User One</h5>
+      <ul>
+          <li>Name : prasad</li>
+          <li>Server Name : prasadserver</li>
+          <li>Username : prasad</li>
+          <li>Password : prasad121</li>
+      </ul>
+      <h5 style="padding-left: 45px;">User Two</h5>
+      <ul>
+          <li>Name : prasad</li>
+          <li>Server Name : myhost</li>
+          <li>Username : reddy1</li>
+          <li>Password : prasad121</li>
+      </ul>
+      <h1 style="padding-left: 20px;">Continue Process</h1>
+      <ul>
+          <li>* Skip for now</li><br>
+          <li>* Done</li><br>
+          <li>* Done</li><br>
+          <li>* It will running and took sometime. [ Installing ]</li><br>
+          <li>* After completing the installing process it will shows the [ finish : cmd-in-target : success : curt in command in -target ]</li><br>
+          <li>* Then click close ---> Asking view full log or Reboot now</li><br>
+          <li>* Click Reboot now</li><br>
+          <li>* Asking login Details Enter it</li><br>
+          <li>* it will redirect to prasadserver ~$ :</li><br>
+          <li>* Then the process completed back to the virtual machine</li><br>
+          <li>* Select that machine right click stop and powered off!</li><br>
+      </ul>
+      </div>
+
+      <!--=============== MAIN JS ===============-->
+      <script>
+         /*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
+   const toggle = document.getElementById(toggleId),
+         nav = document.getElementById(navId)
+
+   toggle.addEventListener('click', () =>{
+       // Add show-menu class to nav menu
+       nav.classList.toggle('show-menu')
+
+       // Add show-icon to show and hide the menu icon
+       toggle.classList.toggle('show-icon')
+   })
+}
+
+showMenu('nav-toggle','nav-menu')
+      </script>
+      
+   </body>
+</html>

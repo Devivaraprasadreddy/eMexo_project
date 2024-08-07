@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="../style.css">
+
+      <title>Responsive dropdown menu - Bedimcode</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="/" class="nav__logo">
+                  <i class="ri-planet-line"></i> DSP
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="/" class="nav__link">Home</a></li>
+
+                  <li><a href="/virtualbox" class="nav__link">Virtual Box</a></li>
+
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Installations <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="/docker" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Docker
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="/putty" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> Putty
+                           </a>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Setup <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="/aws" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> AWS
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="/linux" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> linux
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="/basics" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> basics
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="/about" class="nav__link">About</a></li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="/login" class="dropdown__link">
+                              <i class="ri-user-line"></i> Login
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="/signup" class="dropdown__link">
+                              <i class="ri-lock-line"></i> Register
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="/login" class="dropdown__link">
+                              <i class="ri-message-3-line"></i> Logut
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="/contact" class="nav__link">Contact</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <div class="containers">
+      <center><h1>Docker Installation</h1></center>
+      <h1 style="padding-left: 20px;">Steps</h1>
+      <ul>
+          <li>* sudo apt Update</li><br>
+          <li>* sudo apt-get install apt-transport-https ca-certificates curl software-properties-common</li><br>
+          <li>* curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</li><br>
+          <li>* sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+          </li><br>
+          <li>* sudo Apt Update</li><br>
+          <li>* sudo apt install docker-ce / sudo apt installl docker.io</li><br>
+          <li>* Check the Docker Version command as  " docker --version "</li><br>
+          </ul>
+          <center><h1 style="padding-left: 20px;">Docker Commands</h1></center>
+          <ul>
+          <li>* Change normal user to root user command as " sudo -i "</li><br>
+          <li>* Docker status command as " docker info "</li><br>
+          <li>* Seee the Docker Images command as " docker images "</li><br>
+          <li>* Start the Docker command as " systemctl start docker "</li><br>
+          <li>* See the Conatiners command as " docker ps "</li><br>
+          <li>* See all the Conatiners command as " docker ps -a "</li><br>
+          <li>* To stop the Apache Server command as " systemctl stop apache2 "</li><br>
+          <li>* To start the Apache Server command as " systemctl start apache2 "</li><br>
+          <li>* To see the status of Apache command as " systemctl status apache2 "</li><br>
+          <li>* To see the Container code  command as " ls -lt "</li><br>
+          <li>* Another command as to see the code inside the file has " cat [filename]"</li><br>
+          <li>* To create a file command as "echo [filename] "</li><br>
+          <li>* Another command as to create a file as "touch [filename] "</li><br>
+          <li>* ls means ------->list files and directories</li><br>
+          <li>* ls -l means ------>long format list</li><br>
+          <li>* ls -a means -----> hidden files</li><br>
+          <li>* ls -la means -----> long format list hidden files</li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+          <li>* </li><br>
+      </ul>
+      <center><h1 style="padding-left: 20px;">To Create a Docker Image using Putty</h1></center>
+      <ul>
+          <li>* First Open Virtualbox</li><br>
+          <li>* Start the Machine</li><br>
+          <li>* Login to Root user</li><br>
+          <li>* Verify the IP Address</li><br>
+          <li>* Copy that IP Address to putty</li><br>
+          <li>* And Paste that IP Address to Putty in Place of Hostname</li><br>
+          <li>* Then Click OK</li><br>
+          <li>* Asking Login Details</li><br>
+          <li>* Then After First Check the Docker installed or not!</li><br>
+          <li>* Command as "docker --version"</li><br>
+          <li>* Create a Folder</li><br>
+          <li>* Command as "mkdir [foldername] "</li><br>
+          <li>* Change into that folder directory</li><br>
+          <li>* Command as "cd [foldername] "</li><br>
+          <li>* Create some file like "index.html"</li><br>
+          <li>* Command as -----> echo "hai" > index.html</li><br>
+          <li>* Check the file was created or not</li><br>
+          <li>* Command as "ls"</li><br>
+          <li>* Then Create a Dockerfile</li><br>
+          <li>* Command as "vi Dockerfile"</li><br>
+          <li>* It will go to editor page</li><br>
+          <li>* Press "I"</li><br>
+          <li>* Then Type some Content Like
+              FROM httpd:latest 
+              WORKDIR /usr/local/apache2/htdocs
+              COPY ./index.html/ .
+              CMD ["httpd","-D","FOREGROUND"]
+          </li>
+          <li>* Then press ESC button </li> <br>
+          <li>* Type colon(:)wq</li> <br>
+          <li>* It will back to Terminal</li> <br>
+          <li>* Then check the Dockerfile created or not</li> <br>
+          <li>* Command as "ls"</li> <br>
+          <li>* Then Build the Image</li> <br>
+          <li>* Command as " docker build -t [some name] .</li> <br>
+          <li>* Then check the image was created or not</li> <br>
+          <li>* Command as "docker images"</li> <br>
+          <li>* Then run the Container</li> <br>
+          <li>* Command as "docker run -d --name [somename] -p 81:80[some port] [image name] :latest</li> <br>
+          <li>* Then the Container running or not check it</li> <br>
+          <li>* Command as "docker ps"</li> <br>
+          <li>* If we want to Stop the Container </li> <br>
+          <li>* Command as "docker stop [container ID] "</li> <br>
+          <li>* If we want to start the Container</li> <br>
+          <li>* Command as "docker start [container ID] "</li> <br>
+      </ul>
+     <center><h1>Simple Commands to create the Docker image</h1></center> 
+     <ul>
+      <li>* mkdir [foldername]</li> <br>
+      <li>* cd [foldername] /</li> <br>
+      <li>* echo "hai"> index.html</li> <br>
+      <li>* ls</li> <br>
+      <li>* touch Dockerfile</li> <br>
+      <li>* ls</li> <br>
+      <li>* vi Dockerfile</li> <br>
+      <li>* Then Type some Content Like
+          FROM httpd:latest 
+          WORKDIR /usr/local/apache2/htdocs/
+          COPY ./index.html/ .
+          CMD ["httpd","-D","FOREGROUND"]
+      </li><br>
+      <li>* cat Dockerfile</li><br>
+      <li>* cat index.html</li><br>
+      <li>* docker build -t [some name] .</li><br>
+      <li>* docker run -d --name [somename] -p 81:80[some port] [image name] :latest</li><br>
+      <li>* docker images</li><br>
+      <li>* docker ps</li><br>
+      <li>* </li><br>
+     </ul>
+     <center><h1>How to Push the Image from Putty Terminal to Docker Hub</h1></center>
+     <ul>
+      <li>* First login to docker in putty</li><br>
+      <li>* Command as "docker login"</li><br>
+      <li>* For logout command in putty has "docker logout"</li><br>
+      <li>* Give the Credentials like [Username] and [Password]</li><br>
+      <li>* And Push the image to Docker Hub</li><br>
+      <li>* Command as "docker tag [image name] : latest [Username]/dockerhub : [give some name]"</li><br>
+      <li>* Next Command as</li><br>
+      <li>* "docker push [Username]/dockerhub:[Above given name]"</li><br>
+     </ul>
+     <center><h1>Simple Commands for putty terminal to Docker Hub</h1></center>
+     <ul>
+      <li>* docker tag [image name] : latest [Username]/dockerhub : [give some name]</li><br>
+      <li>* docker push [Username]/dockerhub:[Above given name]</li><br>
+     </ul>
+      <center><h1>Pull Commands from Dockerhub to Putty</h1></center>
+      <ul>
+          <li>* "docker pull [Username]/dockerhub:[given name]</li><br>
+      </ul>
+      <center><h1>If your are taking a free template on website how to create a image in Docker</h1></center>
+      <ul>
+          <li> * mkdir [foldername]</li><br>
+          <li> * cd [foldername] /</li><br>
+          <li> * wget [url]</li><br>
+          <li> * unzip that folder command as "unzip [foldername] "</li><br>
+          <li> * touch Dockerfile</li><br>
+          <li> * ls</li><br>
+          <li> * vi Dockerfile</li><br>
+          <li> * Then Type some Content Like <br>[
+          FROM httpd:latest <br>
+          WORKDIR /usr/local/apache2/htdocs/<br>
+          COPY ./[foldername]/ .<br>
+          CMD ["httpd","-D","FOREGROUND"]
+          </li><br>
+          <li> * cat Dockerfile</li><br>
+          <li> * cat index.html</li><br>
+          <li> * docker build -t [some name] .</li><br>
+          <li> * docker run -d --name [somename] -p 81:80[some port] [image name] :latest</li><br>
+          <li> * docker images</li><br>
+          <li> * docker ps</li><br>
+      </ul>
+      </div>
+      <!--=============== MAIN JS ===============-->
+      <script>
+         /*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
+   const toggle = document.getElementById(toggleId),
+         nav = document.getElementById(navId)
+
+   toggle.addEventListener('click', () =>{
+       // Add show-menu class to nav menu
+       nav.classList.toggle('show-menu')
+
+       // Add show-icon to show and hide the menu icon
+       toggle.classList.toggle('show-icon')
+   })
+}
+
+showMenu('nav-toggle','nav-menu')
+      </script>
+   </body>
+</html>
